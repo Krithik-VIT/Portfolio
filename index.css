@@ -619,7 +619,7 @@ noscript {
    */
 #name {
   padding-top: 15px;
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 700;
   width: fit-content;
   display: flex;
@@ -645,7 +645,7 @@ noscript {
   -webkit-animation: gradient 3.5s ease infinite;
   animation: gradient 3.5s ease infinite;
   padding-top: 10px;
-  font-family: "Amatic SC", sans-serif;
+  font-family: "roboto", sans-serif;
   /* font-weight: 700; */
   font-style: normal;
 }
@@ -711,16 +711,14 @@ noscript {
 #work {
   font-size: 3rem;
   padding-top: 10px;
-  font-family: neon;
-  font-weight: 200;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
   width: fit-content;
   display: flex;
   align-items: flex-start;
   color: var(--color-white);
   flex-wrap: wrap;
-  font-family: "Playwrite IS", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -1066,29 +1064,31 @@ noscript {
 }
 
 .dp img {
-  width: 250px;
-  height: 350px;
+  position: relative;
+  width: 290px;
+  height: 340px;
+  z-index:-3;
 }
 
 .dp::before {
   content: "";
   background-color: transparent;
-  height: 350px;
-  width: 250px;
+  height: 340px;
+  width: 290px;
   position: absolute;
   z-index: -2;
-  box-shadow: 2px 2px 0px inset #8000ff, -2px -2px 0px inset transparent;
+  box-shadow: 3px 3px 0px inset #8000ff, -2px -2px 0px inset transparent;
   transition-duration: 0.5s;
 }
 
 .dp::after {
   content: "";
   background-color: transparent;
-  height: 350px;
-  width: 250px;
+  height: 340px;
+  width: 290px;
   position: absolute;
   z-index: -2;
-  box-shadow: 2px 2px 0px inset transparent, -2px -2px 0px inset #8000ff;
+  box-shadow: 3px 3px 0px inset transparent, -2px -2px 0px inset #8000ff;
   transition-duration: 0.5s;
 }
 
@@ -1432,6 +1432,7 @@ noscript {
 
 .image-div img {
   height: 100%;
+  width:100%;
   border-top-left-radius: 30px;
 }
 
